@@ -1,0 +1,111 @@
+/*     320px — 480px: Mobile devices
+    481px — 768px: iPads, Tablets
+    769px — 1024px: Small screens, laptops
+    1025px — 1200px: Desktops, large screens
+    1201px and more —  Extra large screens, TV */
+
+/* Start Homepage Rwd */
+    @media (min-width:300px) and (max-width:768px){
+
+        /* grid settings */
+        .grid-container {
+            display: grid;
+            grid-template-rows: 80px 500px 856px max-content 80px;
+        }
+
+        /* end grid settings */
+        header a {
+            position: relative;
+            top: 30px;
+            left: 10%;
+            text-decoration: none;
+            color: white;
+        }
+
+        .featured-intro {
+            width: 38%;
+            margin: 32px 0 0 12px;
+        }
+
+        .featured-content {
+            padding: 20px;
+            margin-top: 35px;
+            width: 80%;
+            margin-left: 25px;
+        }
+
+        .flex-container {
+            display: flex;
+            width: 90%;
+            margin: 0 auto;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .latest-post-container {
+            width: 60%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            /* flex-wrap: wrap; */
+            justify-content: space-between;
+        }
+
+        .latest-post {
+            margin: 0 36px 36px 36px;
+            width: 216px;
+        }
+
+    }
+
+    @media (min-width:481px) and (max-width:768px){
+        .featured-intro {
+            width: 38%;
+            margin: 32px 0 0 180px;
+        }
+
+        .featured-content {
+            padding: 20px;
+            margin-top: 35px;
+            width: 80%;
+            margin-left: 155px;
+        }
+
+        .latest-post-container {
+            width: 67%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* flex-basis: 25%; */
+            justify-content: space-between;
+        }
+
+        .latest-post {
+            margin: 0 18px 36px 1px;
+            width: 223px;
+            flex-basis: 41%;
+        }
+    }
+
+    @media (min-width:769px) and (max-width:1024px){
+        .grid-container {
+            display: grid;
+            grid-template-rows: 80px 500px 600px max-content 80px;
+        }
+        
+        .featured-intro {
+            width: 38%;
+            margin: 50px 0 0 60px;
+        }
+    }
+
+    @media (min-width:1025px) and (max-width:1200px){
+
+    }
+
+    @media (min-width:1201px) and (max-width:1400px){
+
+    }
+
+/* End Homepage Rwd */
