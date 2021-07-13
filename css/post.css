@@ -1,0 +1,174 @@
+p {
+  font-size: 18px;
+  color: rgb(53, 52, 52);
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+/* grid container post settings-----
+----------------------------------- */
+
+.grid-container-post {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: 80px 500px max-content 80px;
+  grid-template-areas:
+    "header header"
+    "cover cover"
+    "main sidebar"
+    "footer footer";
+}
+
+.header-post {
+  border-bottom: 1px solid red;
+  grid-area: header;
+  background-color: rgb(37, 36, 36);
+}
+
+.cover-single-post {
+  grid-area: cover;
+  background-image: url("../imgs/office-381228_1280.jpg");
+  background-size: cover;
+}
+
+.post-content {
+  grid-area: main;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.footer-post {
+  grid-area: footer;
+}
+
+/* grid container post settings-----
+----------------------------------- */
+
+/* header------
+------------------- */
+.header-post h1 {
+  text-align: center;
+  /* padding: 5px; */
+  color: rgb(206, 74, 74);
+}
+
+.header-post a {
+  position: relative;
+  top: 30px;
+  left: 10%;
+  text-decoration: none;
+  color: white;
+}
+
+/* end header------
+------------------- */
+
+/* start cover single post*/
+
+/* end cover single post*/
+
+/* start main */
+.single-post-article {
+  padding: 50px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.single-post-article h2 {
+  padding: 30px 0;
+  color: rgb(206, 74, 74);
+}
+
+.single-post-article h3 {
+  padding: 20px 0;
+  color: rgb(206, 74, 74);
+}
+
+/* start social media */
+.social-media {
+  padding: 30px 0 0 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-media h4 {
+  color: rgb(206, 74, 74);
+}
+.social-media a {
+  margin: 10px;
+}
+
+.social-media-icons {
+  margin-top: 20px;
+}
+
+.fa-facebook:before {
+  content: "\f09a";
+  font-size: 43px;
+  color: rgb(36, 35, 35);
+}
+
+.fa-twitter-square:before {
+  content: "\f081";
+  font-size: 43px;
+  color: rgb(36, 35, 35);
+}
+
+.fa-linkedin:before {
+  content: "\f08c";
+  font-size: 43px;
+  color: rgb(36, 35, 35);
+}
+
+/* end social media */
+
+/* end main */
+
+/* start sidebar */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(196, 74, 74);
+  color: white;
+}
+
+.sidebar img {
+  width: 200px;
+  width: 200px;
+}
+
+.sidebar p,
+.sidebar h3 {
+  padding: 20px;
+  text-align: center;
+  width: 60%;
+  color: white;
+}
+
+.sidebar img {
+  border-radius: 50%;
+  margin: 30px;
+}
+
+/* end sidebar */
+
+/* start footer--------
+---------------------- */
+
+.footer-post {
+  background-color: rgb(37, 36, 36);
+  color: white;
+}
+
+.footer-post p {
+  text-align: center;
+  padding: 28px 0 0 0px;
+  color: white;
+}
+
+/* start footer--------
+---------------------- */

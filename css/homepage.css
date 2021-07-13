@@ -1,41 +1,49 @@
 /* ------Global-----
 ------------------------- */
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-html{
-    font-family: 'Lato', sans-serif;
+html {
+  font-family: "Lato", sans-serif;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-h3{
-    padding: 5px 0;
+h3 {
+  padding: 5px 0;
+}
+
+p {
+  font-size: 18px;
+  color: rgb(53, 52, 52);
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+section {
+  padding: 30px 0;
 }
 /* ------Global-----
 ------------------------- */
 
 /* Grid Settings-------
 --------------------------- */
-header{
-    
-    border-bottom: 1px solid red;
+.header-blog {
+  border-bottom: 1px solid red;
 }
 
-.latest-posts{
-    
-    /* border: 1px solid red; */
-    background-color: rgb(241, 241, 241);
-   
+.latest-posts {
+  /* border: 1px solid red; */
+  background-color: rgb(241, 241, 241);
 }
-.grid-container{
-    display: grid;
-    grid-template-rows: 80px 500px 600px 950px 80px;
+.grid-container {
+  display: grid;
+  grid-template-rows: 80px 500px 600px 950px 80px;
 }
 
 /* END OF Grid Settings-------
@@ -43,93 +51,94 @@ header{
 
 /* header---------
 -------------------- */
-header{
-    background-color: rgb(37, 36, 36);
-   
+.header-blog {
+  background-color: rgb(37, 36, 36);
 }
 
-header h1{
-    text-align: center;
-    /* padding: 5px; */
-    color: rgb(206, 74, 74);
+.header-blog h1 {
+  text-align: center;
+  /* padding: 5px; */
+  color: rgb(206, 74, 74);
 }
 
-header a{
-    position: relative;
-    top: 30px;
-    left: 10%;
-    text-decoration: none;
-    color: white;
+.header-blog a {
+  position: relative;
+  top: 30px;
+  left: 10%;
+  text-decoration: none;
+  color: white;
 }
-    
-
 
 /* header---------
 -------------------- */
 
 /* cover--------
 ------------------------*/
-.cover-photo{
-    background-image: url("../imgs/office-381228_1280.jpg");
-    background-size: cover;
+.cover-photo {
+  background-image: url("../imgs/office-381228_1280.jpg");
+  background-size: cover;
 }
 
 /* end of cover--------
 ------------------------*/
 
-
 /* start of featured-
 -----------------------*/
-.flex-container{
-    display: flex;
-    width: 90%;
-    margin: 0 auto;
-    justify-content: center;
-    
+.flex-container {
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+  justify-content: center;
 }
 
-.featured-intro{
-    width: 38%;
-    margin: 40px 0 0 310px;
+.featured-intro {
+  width: 80%;
+  margin: 0 auto;
 }
 
-.featured-intro h2{
-    padding: 18px 0;
-    color: rgb(206, 74, 74);
+.featured-intro h2 {
+  padding: 18px 0;
+  color: rgb(206, 74, 74);
+  text-align: center;
 }
 
+.featured-intro img {
+  text-align: right;
+  margin-left: 40%;
+  margin-top: 25px;
+}
 
 .featured-content {
-    padding: 20px;
-    margin-top: 80px;
-    width: 80%;
-    margin-left: 70px;
+  padding: 20px;
+  margin-top: 80px;
+  width: 80%;
+  margin-left: 70px;
 }
 
-.featured-content h3{
-    color: rgb(206, 74, 74);
+.featured-content h3 {
+  color: rgb(206, 74, 74);
 }
 
-.featured-content p{
-    max-width: 400px;
-    padding: 10px 0;
- }
+.featured-content p {
+  max-width: 400px;
+  padding: 10px 0;
+}
 
 /* class for buttons */
-.btn{
-    border: 1px solid red;
-    background-color: rgb(37, 36, 36);
-    color: white;
-    margin: 10px 0;
-    padding: 15px;
-    display: inline-block;
-    width: 212px;
-    text-align: center;
+.btn {
+  /* border: 1px solid red; */
+  background-color: rgb(37, 36, 36);
+  color: white;
+  margin: 10px 0;
+  padding: 15px;
+  display: inline-block;
+  width: 212px;
+  text-align: center;
 }
 
-.btn:hover{
-    color: rgb(231, 127, 127);
-    transition: color .3s;
+.btn:hover {
+  color: rgb(231, 127, 127);
+  transition: color 0.3s;
 }
 /* end class for buttons */
 
@@ -138,39 +147,42 @@ header a{
 
 /* start latest articles---------
 ---------------------------------- */
-.latest-posts h2{
-    text-align: center;
-    padding: 50px 0;
+
+.latest-posts h2 {
+  text-align: center;
+  padding: 50px 0;
 }
 
-.latest-post-container{
-    width: 60%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.latest-post-container {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.latest-post{
-    margin: 20px;
-    width: 216px;
+.latest-post {
+  margin: 20px;
+  width: 216px;
 }
 
-.latest-post h3{
-    color: rgb(206, 74, 74);
+.latest-post h3 {
+  color: rgb(206, 74, 74);
 }
 
 /* end latest articles---------
 ---------------------------------- */
 
 /* start footer */
-.footer{
-    background-color: rgb(37, 36, 36);
-    color: white;
+.footer {
+  background-color: rgb(37, 36, 36);
+  color: white;
 }
 
-.footer p{
-    text-align: center;
-    padding: 28px 0 0 0px;
+.footer p {
+  text-align: center;
+  padding: 33px 0 0 0px;
+  color: white;
+  font-size: 0.95em;
 }
 /* end footer */

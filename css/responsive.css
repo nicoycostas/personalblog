@@ -5,144 +5,188 @@
     1201px and more —  Extra large screens, TV */
 
 /* Start Homepage Rwd */
-    @media (min-width:300px) and (max-width:768px){
+@media (min-width: 300px) and (max-width: 768px) {
+  /* grid settings */
+  .grid-container {
+    display: grid;
+    grid-template-rows: 80px 500px max-content max-content 80px;
+  }
 
-        /* grid settings */
-        .grid-container {
-            display: grid;
-            grid-template-rows: 80px 500px max-content max-content 80px;
-        }
+  /* end grid settings */
+  .header-blog a {
+    position: relative;
+    top: 30px;
+    left: 6%;
+    text-decoration: none;
+    color: white;
+  }
 
+  .featured-intro {
+    width: 100% !important;
+    text-align: center;
+    margin: 0 auto !important;
+  }
 
-        /* end grid settings */
-        header a {
-            position: relative;
-            top: 30px;
-            left: 10%;
-            text-decoration: none;
-            color: white;
-        }
+  .featured-intro h2 {
+    padding: 18px 0;
+    color: rgb(206, 74, 74);
+    /* width: 200px; */
+    text-align: center;
+  }
 
-        .featured-intro {
-            width: 38%;
-            margin: 32px 0 0 12px;
-        }
+  .featured-intro img {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
 
-        .featured-intro h2 {
-            padding: 18px 0;
-            color: rgb(206, 74, 74);
-            width: 200px;
-        }
+  .featured-content {
+    padding: 20px;
+    margin-top: 15px;
+    width: 75%;
+    margin: 0 auto;
+  }
 
-        .featured-intro img{
-            width: 300px;
-            height: 300px;
-        }
+  .flex-container {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+  }
 
-        .featured-content {
-            padding: 20px;
-            margin-top: 35px;
-            width: 80%;
-            margin-left: 25px;
-        }
+  .latest-post-container {
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-        .flex-container {
-            display: flex;
-            width: 90%;
-            margin: 0 auto;
-            justify-content: center;
-            flex-direction: column;
-        }
+  .latest-post {
+    /* margin: 0 auto 25px auto; */
+    width: 216px;
+    margin: 0 auto 20px auto;
+  }
 
-        .latest-post-container {
-            width: 65%;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
+  .footer p {
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 0.9em;
+    padding: 23px 0;
+  }
+}
 
-        .latest-post {
-            margin: 0 36px 36px 36px;
-            width: 216px;
-        }
+@media (min-width: 769px) and (max-width: 1024px) {
+  .grid-container {
+    display: grid;
+    grid-template-rows: 80px 500px 600px max-content 80px;
+  }
 
-    }
+  .flex-container {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+  }
 
-    @media (min-width:481px) and (max-width:768px){
-        .featured-intro {
-            width: 38%;
-            margin: 32px 0 0 180px;
-        }
+  .featured-intro {
+    width: 38%;
+    margin: 50px 0 0 60px;
+  }
 
-        .featured-content {
-            padding: 20px;
-            margin-top: 35px;
-            width: 80%;
-            margin-left: 155px;
-        }
+  .latest-post-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-        .latest-post-container {
-            width: 67%;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            /* flex-basis: 25%; */
-            justify-content: space-between;
-        }
+  .latest-post {
+    margin: 20px;
+    width: 213px;
+    /* background-color: aqua; */
+    flex-basis: 20%;
+  }
+}
 
-        .latest-post {
-            margin: 0 18px 36px 1px;
-            width: 223px;
-            flex-basis: 41%;
-        }
-    }
+@media (min-width: 1025px) and (max-width: 1200px) {
+}
 
-    @media (min-width:769px) and (max-width:1024px){
-        .grid-container {
-            display: grid;
-            grid-template-rows: 80px 500px 600px max-content 80px;
-        }
-        
-        .flex-container {
-            display: flex;
-            width: 100%;
-            margin: 0 auto;
-            justify-content: center;
-        }
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .latest-post-container {
+    width: 78%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-        .featured-intro {
-            width: 38%;
-            margin: 50px 0 0 60px;
-        }
-
-   
-
-        .latest-post-container {
-            width: 90%;
-            margin: 0 auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .latest-post {
-            margin: 20px;
-            width: 213px;
-            /* background-color: aqua; */
-            flex-basis: 20%;
-        }
-
-
-    }
-
-    @media (min-width:1025px) and (max-width:1200px){
-
-    }
-
-    @media (min-width:1201px) and (max-width:1400px){
-
-    }
+  .latest-post-container {
+    width: 84% !;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .featured-intro {
+    width: 38%;
+    margin: 40px 0 0 191px !important;
+  }
+}
 
 /* End Homepage Rwd */
+
+/* Start Post Page Rwd */
+
+@media (min-width: 300px) and (max-width: 768px) {
+  .grid-container-post {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 80px 500px max-content 800px 80px;
+    grid-template-areas:
+      "header header"
+      "cover cover"
+      "main main"
+      "sidebar sidebar"
+      "footer footer";
+  }
+
+  .single-post-article {
+    padding: 50px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .footer-post p {
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 0.9em;
+    padding: 23px 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .grid-container-post {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 80px 500px max-content 800px 80px;
+    grid-template-areas:
+      "header header"
+      "cover cover"
+      "main main"
+      "sidebar sidebar"
+      "footer footer";
+  }
+
+  .single-post-article {
+    padding: 50px;
+    width: 86%;
+    margin: 0 auto;
+  }
+}
+
+/* End Post Page Rwd */
